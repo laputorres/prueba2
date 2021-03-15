@@ -3,6 +3,7 @@
 :root {
     font-family: 'Lato', sans-serif;
     --color-primary: #fb9c2c;
+    background: rgba(221, 221, 221, 0.527);
 
 }
 
@@ -29,6 +30,7 @@
     display: flex;
     height: 130px;
 
+
 }
 
 .menu__item {
@@ -42,9 +44,10 @@
 .menu__list {
     color: #000;
     text-decoration: none;
-    margin-left: 10px;
+    /*  margin-left: 10px; */
     padding: 50px 20px;
     font-size: 12px;
+    border-radius: 10%;
 
 
 }
@@ -90,7 +93,6 @@
     margin-left: 150px;
     text-align: left;
     width: 700px;
-    font-size: ;
 }
 
 .slider__title {
@@ -112,14 +114,46 @@
     font-size: 20px;
 }
 
-.pagina{
-    display: inline-block; 
+.pagina {
+    display: inline-block;
     text-align: center;
     margin: 80px 250px 0 250px;
     color: #666;
     font-weight: 900;
-    
+
+
 }
 
+.marcas {
+    background: rgba(221, 221, 221, 0.527);
+}
 
+.marcas__grid {
+    display: grid;
+    grid-template-areas:
+        "img1 img2 img3";
+    width: 100px;
+    
+    gap:0 100px;
+    margin-left: 350px;
+}
 
+.marcas__title {
+
+    color: dodgerblue;
+    text-align: center;
+    padding: 20px;
+}
+
+.marcas__list-item {
+    list-style: none;
+   padding-right: 100px;
+    overflow: hidden;
+    color: #666;
+    text-align: center;
+}
+
+.marcas__img {
+   
+  
+}
