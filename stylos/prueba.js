@@ -3,4 +3,3 @@ $('#menu li a').on('click', function(){
     $(this).addClass('activo');
 });
 
-console.log("prueba");
