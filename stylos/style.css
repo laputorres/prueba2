@@ -7,10 +7,11 @@
 
 }
 
+
 .container__menu {
     display: flex;
     position: fixed;
-    background: #fff;
+    background: #000;
     width: 100%;
     margin-top: -100px;
     margin-bottom: -130px;
@@ -24,41 +25,41 @@ z-index: 10;
     height: 70px;
     margin-left: 200px;
     margin-top: 20px;
-
-
-
-
 }
 
-
-
-.menu__item {
+ul{
     display: flex;
-    height: 100px;
+    height: 70px;
     font-size: 400;
     margin-left: 40PX;
     align-items: center;
 }
-
-.menu__list {
-    color: #000;
+ul li{
+	list-style: none;
+}
+ul li a{
+    color: #fff;
     text-decoration: none;
     /*  margin-left: 10px; */
-    padding: 50px 20px;
+    padding: 43px 10px;
     font-size: 12px;
     border-radius: 10%;
-
-
 }
 
-.menu__list--inicio {
+ul li a:hover{
+    background: #fb9a2c70;
+}
+
+
+li.active a{
+	background: #fb9c2c;
+	color: #000;
+}
+
+li.active a:hover{
     background: #fb9c2c;
-
 }
 
-.menu__list:hover {
-    background: #fb9a2c3a;
-}
 
 .phone {
     display: flex;
@@ -79,7 +80,7 @@ z-index: 10;
 
 .slider {
     display: flex;
-    background-image: url('../img/fondo.jpg');
+    background-image: url('../img/slider.jpg');
     background-size: cover;
     background-attachment: fixed;
     margin-top: 100px;
@@ -145,6 +146,7 @@ z-index: 10;
     margin: auto;
     justify-content: center;
     gap: 0 100px;
+    width: 100%;
 }
 
 .marcas__title {
