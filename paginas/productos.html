@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/d94b5edb2e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../stylos/style.css">
     <link rel="stylesheet" href="../stylos/normalize.css">
+   
 
     <title>Deportes Navarro | Productos</title>
 </head>
@@ -15,11 +16,15 @@
 <body>
     <header class="container__menu">
         <img class="logo" src="../img/logo.png" alt="">
-        <nav class="menu__item">
-            <a class="menu__list menu__list--inicio" href="../index.html"><b>INICIO</b></a>
-            <a class="menu__list" href="./productos.html"><b>PRODUCTOS</b></a>
-            <a class="menu__list" href="#"><b>CONTACTO</b></a>
-            <a class="menu__list" href="#"><b>BLOG</b></a>
+        <nav>
+            <ul>
+                <li><a href="../index.html"><b>INICIO</b></a></li>
+                <li class="active"><a  class="menu__list" href="productos.html"><b>PRODUCTOS</b></a></li>
+                <li><a class="menu__list" href="#"><b>BLOG</b></a></li>
+                <li><a class="menu__list" href="#"><b>CONTACTO</b></a></li>
+                
+                
+            </ul>
         </nav>
 
         <div class="phone">
@@ -68,9 +73,9 @@
         <h3 class="marcas__title">Tenemos tus marcas favoritas</h3>
         <div class="marcas__grid">
 
-            <img class="marcas__img" src="./img/basquet.png" alt="">
-            <img class="marcas__img" src="./img/futbol.png" alt="">
-            <img class="marcas__img" src="./img/beisbol.png" alt="">
+            <img class="marcas__img" src="../img/basquet.png" alt="">
+            <img class="marcas__img" src="../img/futbol.png" alt="">
+            <img class="marcas__img" src="../img/beisbol.png" alt="">
             <ul marcas__list>
                 <li class="marcas__list-item">ADX</li>
                 <li class="marcas__list-item">America,Mirayo</li>
@@ -138,5 +143,17 @@
         <p>Consulta nuestro <a href="#">Aviso de Privacidad</a></p>
     </div>
 </footer>
+
+<script>let ul = document.querySelector('ul');
+    var li = document.querySelectorAll('li');
+
+    li.forEach(el => {
+
+        el.addEventListener('click', function(){
+        ul.querySelector('.active').classList.remove('active');
+         
+             el.classList.add('active');
+         }); 			
+    });</script>
 
 </html>
