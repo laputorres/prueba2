@@ -3,7 +3,8 @@
 :root {
     font-family: 'Lato', sans-serif;
     --color-primary: #fb9c2c;
-    background: rgba(221, 221, 221, 0.527);
+    background: #fff;
+    width: 100%;
 
 }
 
@@ -15,7 +16,7 @@
     width: 100%;
     margin-top: -100px;
     margin-bottom: -130px;
-z-index: 10;
+    z-index: 10;
 
 }
 
@@ -27,36 +28,38 @@ z-index: 10;
     margin-top: 20px;
 }
 
-ul{
+ul {
     display: flex;
     height: 70px;
     font-size: 400;
     margin-left: 40PX;
     align-items: center;
 }
-ul li{
-	list-style: none;
+
+ul li {
+    list-style: none;
 }
-ul li a{
+
+ul li a {
     color: #fff;
     text-decoration: none;
     /*  margin-left: 10px; */
     padding: 43px 10px;
     font-size: 12px;
-    border-radius: 10%;
+    border-radius: 0 0 10% 10%;
 }
 
-ul li a:hover{
+ul li a:hover {
     background: #fb9a2c70;
 }
 
 
-li.active a{
-	background: #fb9c2c;
-	color: #000;
+li.active a {
+    background: #fb9c2c;
+    color: #000;
 }
 
-li.active a:hover{
+li.active a:hover {
     background: #fb9c2c;
 }
 
@@ -84,98 +87,179 @@ li.active a:hover{
     background-size: cover;
     background-attachment: fixed;
     margin-top: 100px;
-    height: 500px;
+    height: 550px;
     position: relative;
 }
 
 .slider__content {
-    margin: 50px;
-    margin-left: 150px;
+   /*  margin: 50px 0 0 200px; */
+    
     text-align: left;
-    width: 700px;
+    width: 100%;
 }
 
 .slider__title {
     color: var(--color-primary);
-    width: 500px;
-    font-weight: 700;
-    font-size: 30px;
+    width: 70%;
+    font-weight: 900;
+    font-size: 50px;
+    text-align: right;
+    margin-left: 20%;
+    margin-top: 5%;
 }
 
 .slider__subtitle {
     color: #fff;
-    font-size: 20px;
+    font-size: 30px;
     width: 500px;
+    margin: 100px 0 0 50px;
 }
 
 .slider__text {
     color: #ddd;
     font-weight: 300;
     font-size: 20px;
+    margin: 30px 30px 0 50px;
+}
+
+.marcas__container {
+    display: flex;
+
+}
+
+.marcas__text--img {
+    display: flexbox;
+    width: 50%;
+    border-radius: 0 10px 10px 10px;
+
+}
+
+.marcas__text--info {
+    background: #666;
+    display: flexbox;
+    height: 250px;
+    margin: auto;
+    box-shadow: 0 0 20px;
+    border-radius: 10px;
+    width: 40%;
+
 }
 
 
-
-.marcas {
-    margin-left: 200px;
-    width: 70%;
-    justify-content: center;
-    border-bottom: dotted #6666667e 1px;
-    padding-bottom: 50px;
-}
 
 .marcas__text--1 {
-    display: inline-block;
+    width: 500px;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    height: 50%;
     text-align: center;
-    margin: 100px auto;
-    color: #666;
-    font-weight: 900;
+
 }
 
-.marcas__text2 {
-    color: #666;
-    text-align: center;
-    margin-top: -60px;
-    font-weight: 900;
-}
-
-.marcas__grid {
-    display: grid;
-    grid-template-areas:
-        "img1 img2 img3";
-    margin: auto;
-    justify-content: center;
-    gap: 0 100px;
+.boton {
+    display: inline;
     width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px;
+    background: var(--color-primary);
+    margin: 50px 0 0 200px;
+    color: #fff;
+
 }
+
+/* balones */
+
+
+.marcas__grid {}
 
 .marcas__title {
-
-    color: dodgerblue;
+    width: 100%;
+    display: flexbox;
+    background: #fff;
     text-align: center;
-    padding: 20px;
+    color: var(--color-primary);
+    padding: 20px 0;
+
 }
 
-.marcas__list-item {
-    list-style: none;
-    padding-right: 50px;
-    overflow: hidden;
-    color: #666;
-    font-weight: 900;
-    text-align: center;
-    margin: auto;
+.marcas__grid--container {
+    display: inline-flex;
+    width: 100%;
+    height: 500px;
+    
+
+}
+
+.marcas__grid--basquet {
+    border: 1px solid #000;
+    width: 20%;
+    height: 500px;
+    margin:0 50px 0 10%;
+    border-radius: 20%;
+    background-image: url(../img/basquet.png);
+    background-color:  #fb9a2c70;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 550px;
+    
+    
+}
+
+.marcas__grid--fut {
+    border: 1px solid #000;
+    width: 20%;
+    height: 500px;
+    margin:0 50px 0 50px;
+    border-radius: 20%;
+    background-image: url(../img/futbol.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 550px;
+    
+    
+}
+
+.marcas__grid--beisbol {
+    border: 1px solid #000;
+    width: 20%;
+    height: 500px;
+    margin:0 50px 0 50px;
+    border-radius: 20%;
+    background-image: url(../img/beisbol.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 550px;
+    
+    
 }
 
 .marcas__img {
+    display: flex;
     width: 80px;
-    padding: auto;
-    margin: auto;
+    
+    
     transition: 1s;
 }
 
-.marcas__img:hover{
+.marcas__img:hover {
     width: 100px;
 }
+
+.marcas__list{
+    display: block;
+}
+
+.marcas__list-item{
+    display: inline-flex;
+}
+
 .footer__menu {
     text-align: center;
     justify-content: center;
@@ -195,6 +279,7 @@ li.active a:hover{
     color: var(--color-primary);
 }
 
+/* 
 .footer__menu--item-inicio {
     color: var(--color-primary);
 
@@ -216,6 +301,7 @@ li.active a:hover{
     padding-bottom: 20.25%;
     position: relative;
     height: 0;
+    width: 70%;
 
 
 }
@@ -233,10 +319,15 @@ li.active a:hover{
     color: #666;
 }
 
-.footer__end--paid {}
-
 .footer__end--icon {
     font-size: 50px;
     padding: 10px;
 
 }
+ */
+
+
+
+
+
+/*DISEÑO PARA TABLETAS */
